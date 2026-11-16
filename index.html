@@ -1,14 +1,42 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Iqra Ali — PhD Researcher in Natural Language Processing, Large Language Models, longitudinal modelling, multilingual NLP, and computational mental health at Queen Mary University of London.">
+  <meta name="description" content="Iqra Ali — PhD Researcher in Natural Language Processing, longitudinal modelling, large language models, computational mental health and multilingual NLP at Queen Mary University of London.">
   <meta name="author" content="Iqra Ali">
   <title>Iqra Ali | NLP Researcher</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <style>
+    html { scroll-behavior: smooth; }
+    section[id] { scroll-margin-top: 85px; }
+    .detail-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.25rem;
+      margin-top: 1.5rem;
+    }
+    .detail-card {
+      background: #fff;
+      border: 1px solid #e5eaf0;
+      border-radius: 12px;
+      padding: 1.4rem;
+    }
+    .detail-card h3 { margin-top: 0; }
+    .detail-card li { margin-bottom: .5rem; }
+    .news-list li { margin-bottom: .65rem; }
+    .publication-item, .project-item { margin-bottom: 1.6rem; }
+    .pub-links a, .project-links a { margin-right: 1rem; }
+    .timeline-meta { color: #64748b; font-size: .95rem; }
+    .experience-content p { margin-bottom: .5rem; }
+    @media(max-width: 680px) {
+      .detail-grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
+
 <body>
 
 <header class="site-header">
@@ -24,6 +52,8 @@
       <a href="#experience">Experience</a>
       <a href="#publications">Publications</a>
       <a href="#projects">Projects</a>
+      <a href="#awards">Awards</a>
+      <a href="#service">Service</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
@@ -31,6 +61,7 @@
 
 <main id="home">
 
+  <!-- HERO -->
   <section class="profile-hero">
     <div class="hero-inner">
       <div class="profile-block">
@@ -39,7 +70,7 @@
         </div>
 
         <h1>Iqra Ali</h1>
-        <p class="role">Ph.D. Researcher, Natural Language Processing (NLP)</p>
+        <p class="role">PhD Researcher, Natural Language Processing (NLP)</p>
 
         <p class="affiliation">
           <a href="https://www.qmul.ac.uk/" target="_blank" rel="noopener">
@@ -56,118 +87,142 @@
     </div>
   </section>
 
+  <!-- ABOUT -->
   <section id="about" class="section white">
     <div class="section-container about-layout">
-
       <div class="about-main">
         <h2>Hi There 👋</h2>
 
         <p>
-          I am a PhD researcher in the School of Electronic Engineering and Computer Science at
-          <a href="https://www.qmul.ac.uk/" target="_blank" rel="noopener">Queen Mary University of London</a>,
-          working in Natural Language Processing and the Centre for Human-Centred Computing under the supervision of
-          <a href="https://www.qmul.ac.uk/eecs/people/profiles/liakatamaria.html" target="_blank" rel="noopener">
-            Prof. Maria Liakata
-          </a>.
+          I am a PhD researcher in the School of Electronic Engineering and
+          Computer Science at
+          <a href="https://www.qmul.ac.uk/" target="_blank" rel="noopener">
+            Queen Mary University of London</a>,
+          working in Natural Language Processing and the Centre for
+          Human-Centred Computing under the supervision of
+          <a href="https://www.qmul.ac.uk/eecs/people/profiles/liakatamaria.html"
+             target="_blank" rel="noopener">Prof. Maria Liakata</a>.
         </p>
 
         <p>
-          My research focuses on <strong>longitudinal modelling, large language models, computational mental health,
-          multilingual NLP, and low-resource language technologies</strong>. I am particularly interested in how language
-          models can represent and reason about changes in people, states, and behaviour over time.
+          My research focuses on <strong>longitudinal modelling, large language
+          models, computational mental health, multilingual NLP and low-resource
+          language technologies</strong>. I am particularly interested in how
+          language models represent, track and reason about changes in people's
+          psychological states, language and behaviour over time.
         </p>
 
         <p>
-          I currently lead the <strong>CLPsych 2026 Shared Task</strong> on capturing and characterizing mental-health
-          changes through social-media timeline dynamics. I also contribute to the
-          <a href="https://turing-ds4mh.github.io/" target="_blank" rel="noopener">Data Science for Mental Health (DS4MH)</a>
-          research community.
+          My work includes instruction fine-tuning, in-context learning,
+          temporally informed modelling, model evaluation, dataset and benchmark
+          development, and multimodal NLP.
         </p>
 
         <p>
-          Before starting my PhD, I completed a Master's degree at the
-          <a href="https://www.naist.jp/en/" target="_blank" rel="noopener">Nara Institute of Science and Technology (NAIST)</a>
-          in Japan, where I worked in the Natural Language Processing Lab. My work has included dataset and benchmark
-          construction across Pashto, Urdu, Japanese, Swahili, and English, as well as evaluation of multilingual and
-          vision-language models.
+          I served as <strong>Lead Organiser of the CLPsych 2026 Shared Task</strong>
+          on capturing and characterizing mental-health changes through
+          social-media timeline dynamics. I also lead activities within the
+          <a href="https://turing-ds4mh.github.io/" target="_blank" rel="noopener">
+            Data Science for Mental Health (DS4MH) Interest Group</a>,
+          supporting interdisciplinary collaboration between researchers working
+          in artificial intelligence, NLP and mental health.
         </p>
 
         <p>
-          I also have research and applied-AI experience at <strong>Fujitsu AI Lab</strong>,
-          <strong>Fusic Co., Ltd.</strong>, and <strong>CureMD Healthcare IT R&amp;D</strong>.
+          Before my PhD, I completed a Master's in Engineering at the
+          <a href="https://www.naist.jp/en/" target="_blank" rel="noopener">
+            Nara Institute of Science and Technology (NAIST)</a>
+          in Japan, under the supervision of Prof. Taro Watanabe.
+          My earlier research involved multilingual NLP, low-resource language
+          resources, human-versus-LLM-generated text detection and
+          vision-language model evaluation.
+        </p>
+
+        <p>
+          I have also worked on applied AI research at
+          <strong>Fujitsu AI Lab</strong>,
+          <strong>Fusic Co., Ltd.</strong>, and
+          <strong>CureMD Healthcare IT R&amp;D</strong>.
         </p>
 
         <h3 class="subheading">Activities / News</h3>
-
         <ul class="news-list">
-          <li><strong>[2026]</strong> Leading the CLPsych 2026 Shared Task on mental-health timeline dynamics.</li>
-          <li><strong>[2026]</strong> Released <em>LiFT: Does Instruction Fine-Tuning Improve In-Context Learning for Longitudinal Modelling by Large Language Models?</em></li>
+          <li><strong>[2026]</strong> Awarded an Isambard-AI research compute allocation.</li>
+          <li><strong>[2026]</strong> Led the CLPsych 2026 Shared Task on mental-health timeline dynamics.</li>
+          <li><strong>[2026]</strong> Released LiFT: Does Instruction Fine-Tuning Improve In-Context Learning for Longitudinal Modelling by Large Language Models?</li>
           <li><strong>[2026]</strong> Co-authored VLURes, published in Findings of ACL 2026.</li>
           <li><strong>[2026]</strong> Co-authored OasisSimp, published at LREC 2026.</li>
-          <li><strong>[2025]</strong> Started a UKRI-funded PhD at Queen Mary University of London.</li>
-          <li><strong>[2025]</strong> HLU accepted at COLING 2025.</li>
+          <li><strong>[2026]</strong> Participating in the UK AI Research Symposium 2026, 24 November.</li>
+          <li><strong>[2025]</strong> Started my UKRI-funded PhD at QMUL.</li>
+          <li><strong>[2025]</strong> HLU published at COLING 2025.</li>
           <li><strong>[2025]</strong> Contributed to the CLPsych 2025 Shared Task.</li>
           <li><strong>[2024]</strong> Received a Google Conference Travel Grant.</li>
-          <li><strong>[2024]</strong> Pashto paraphrase-detection work published at LREC-COLING 2024.</li>
-          <li><strong>[2022–2024]</strong> MEXT Scholar at NAIST, Japan.</li>
+          <li><strong>[2024]</strong> Published Pashto paraphrase detection research at LREC-COLING 2024.</li>
+          <li><strong>[2022–2024]</strong> Japanese Government MEXT Scholar at NAIST.</li>
         </ul>
       </div>
 
       <aside class="about-side">
         <div class="side-block">
-          <h3>Interests</h3>
+          <h3>Research Interests</h3>
           <ul>
             <li>Natural Language Processing</li>
             <li>Large Language Models</li>
             <li>Longitudinal Modelling</li>
             <li>Computational Mental Health</li>
+            <li>Temporal Reasoning</li>
+            <li>Instruction Fine-Tuning</li>
             <li>Multilingual NLP</li>
             <li>Low-Resource Languages</li>
-            <li>Vision-Language Models</li>
-            <li>Dataset & Benchmark Construction</li>
+            <li>Multimodal Learning</li>
+            <li>Dataset &amp; Benchmark Construction</li>
           </ul>
         </div>
 
         <div class="side-block">
           <h3>Education</h3>
-
           <div class="edu-item">
-            <strong>PhD Computer Science</strong>
+            <strong>PhD in Computer Science</strong>
             <span>Queen Mary University of London</span>
-            <span>2025–2028 · London, UK</span>
+            <span>Feb 2025 – Sep 2028 · UK</span>
+            <span>Supervisor: Prof. Maria Liakata</span>
           </div>
 
           <div class="edu-item">
             <strong>Master's in Engineering</strong>
             <span>Nara Institute of Science and Technology</span>
-            <span>2022–2024 · Nara, Japan</span>
+            <span>Oct 2022 – Sep 2024 · Japan</span>
+            <span>GPA: 3.7/4.0</span>
+            <span>Supervisor: Prof. Taro Watanabe</span>
           </div>
 
           <div class="edu-item">
             <strong>Bachelor's in Computer Science</strong>
             <span>University of Engineering and Technology</span>
-            <span>2017–2021 · Lahore, Pakistan</span>
+            <span>Oct 2017 – Aug 2021 · Pakistan</span>
+            <span>GPA: 3.45/4.0</span>
           </div>
         </div>
 
         <div class="side-block">
-          <h3>Scholarships</h3>
+          <h3>Scholarships &amp; Awards</h3>
           <ul>
-            <li>UKRI PhD Studentship</li>
+            <li>UKRI Fully Funded PhD Studentship</li>
+            <li>Isambard-AI Research Compute Allocation</li>
+            <li>Google Conference Travel Grant</li>
             <li>MEXT Scholarship</li>
-            <li>HEC Scholarship</li>
+            <li>HEC Undergraduate Scholarship</li>
             <li>Punjab Group of Colleges Scholarship</li>
           </ul>
         </div>
       </aside>
-
     </div>
   </section>
 
+  <!-- EXPERIENCE -->
   <section id="experience" class="section soft">
     <div class="section-container narrow">
       <h2 class="section-title">Experience</h2>
-
       <div class="experience-list">
 
         <article class="experience-item">
@@ -175,9 +230,34 @@
           <div class="experience-content">
             <h3>PhD Researcher</h3>
             <p class="org">Queen Mary University of London</p>
-            <p class="meta">Feb 2025 – Present · London, United Kingdom</p>
-            <p><strong>Research:</strong> Longitudinal modelling, large language models, computational mental health, evaluation, and human-centred NLP.</p>
-            <p>Lead organizer of the CLPsych 2026 Shared Task and contributor to the CLPsych 2025 Shared Task.</p>
+            <p class="meta">Feb 2025 – Present · London, UK</p>
+            <p>
+              Researching longitudinal NLP, large language models,
+              computational mental health, instruction fine-tuning,
+              in-context learning and human-centred NLP.
+            </p>
+            <p>
+              Developed LiFT, a research framework examining instruction
+              fine-tuning for longitudinal modelling across multiple
+              datasets, tasks and language models.
+            </p>
+            <p>
+              Led the CLPsych 2026 Shared Task and contributed to the
+              CLPsych 2025 Shared Task.
+            </p>
+          </div>
+        </article>
+
+        <article class="experience-item">
+          <div class="experience-icon">QM</div>
+          <div class="experience-content">
+            <h3>Teaching Assistant</h3>
+            <p class="org">Queen Mary University of London</p>
+            <p class="meta">London, UK</p>
+            <p>
+              Supporting undergraduate and Master's teaching through
+              laboratory sessions, student guidance and coursework assessment.
+            </p>
           </div>
         </article>
 
@@ -186,9 +266,24 @@
           <div class="experience-content">
             <h3>Researcher</h3>
             <p class="org">Nara Institute of Science and Technology (NAIST)</p>
-            <p class="meta">2022 – 2024 · Nara, Japan</p>
-            <p><strong>Research:</strong> Multilingual NLP, low-resource languages, LLM-generated text detection, and vision-language evaluation.</p>
-            <p>Developed datasets and benchmarks for Pashto, Urdu, and multilingual vision-language research.</p>
+            <p class="meta">Oct 2022 – Sep 2024 · Nara, Japan</p>
+            <p>
+              Conducted research in multilingual NLP, low-resource languages,
+              LLM-generated text detection and vision-language evaluation.
+            </p>
+            <p>
+              Developed a manually annotated Pashto paraphrase corpus of
+              5,793 sentence pairs across 10 domains, achieving 96% F1
+              with fine-tuned XLM-RoBERTa.
+            </p>
+            <p>
+              Developed HLU, an Urdu human-versus-LLM text detection benchmark
+              with 1,014 instances across 13 domains.
+            </p>
+            <p>
+              Contributed to VLURes, a benchmark for multilingual grounding
+              and cross-lingual robustness in vision-language models.
+            </p>
           </div>
         </article>
 
@@ -198,8 +293,15 @@
             <h3>AI Researcher</h3>
             <p class="org">Fujitsu AI Lab, Fujitsu Limited</p>
             <p class="meta">Jun 2023 – Jan 2024 · Japan</p>
-            <p><strong>Research:</strong> Multimodal learning, dataset development, and BLIP-2-based model fine-tuning for animal-behaviour recognition.</p>
-            <p>Led a five-member research team and coordinated data collection, annotation, experimentation, and evaluation.</p>
+            <p>
+              Led a five-member research team developing multimodal datasets
+              and fine-tuning BLIP-2-based models for animal-behaviour
+              recognition, improving classification accuracy by 3%.
+            </p>
+            <p>
+              Coordinated data collection, multimodal annotation, experiments
+              and evaluation within a reproducible applied-AI pipeline.
+            </p>
           </div>
         </article>
 
@@ -209,7 +311,15 @@
             <h3>AI Researcher</h3>
             <p class="org">Fusic Co., Ltd.</p>
             <p class="meta">Aug 2023 · Japan</p>
-            <p><strong>Research:</strong> Multimodal modelling for suicidal-ideation detection using textual, visual, and acoustic signals.</p>
+            <p>
+              Led a team of eight researchers and interns developing multimodal
+              models integrating textual, visual and acoustic signals for
+              suicidal-ideation detection.
+            </p>
+            <p>
+              Achieved 85% classification accuracy and contributed to applied
+              mental-health research in collaboration with clinical stakeholders.
+            </p>
           </div>
         </article>
 
@@ -218,8 +328,16 @@
           <div class="experience-content">
             <h3>AI Analyst</h3>
             <p class="org">CureMD Healthcare IT R&amp;D</p>
-            <p class="meta">Jan 2022 – Sep 2022 · New York, USA</p>
-            <p>Worked with product, engineering, and operations teams on healthcare workflow redesign and customised Electronic Health Record development.</p>
+            <p class="meta">Jan 2022 – Sep 2022 · USA</p>
+            <p>
+              Collaborated with product, engineering and operations teams to
+              redesign order-processing workflows, reducing processing
+              time by 20%.
+            </p>
+            <p>
+              Contributed to customised Electronic Health Record development,
+              supporting a reported 15% improvement in customer satisfaction.
+            </p>
           </div>
         </article>
 
@@ -229,7 +347,11 @@
             <h3>Process Analyst</h3>
             <p class="org">Bank of Punjab, IT Development</p>
             <p class="meta">Oct 2021 – Jan 2022 · Lahore, Pakistan</p>
-            <p>Analysed operational data, campaign performance, and KPIs to identify process improvements and support technology initiatives.</p>
+            <p>
+              Analysed operational data, campaign performance and KPIs to
+              identify process improvements contributing to a 15% increase
+              in return on investment.
+            </p>
           </div>
         </article>
 
@@ -237,92 +359,119 @@
     </div>
   </section>
 
+  <!-- PUBLICATIONS -->
   <section id="publications" class="section white">
     <div class="section-container narrow">
       <h2 class="section-title">Publications</h2>
-
       <p class="section-intro">
-        Selected conference papers and preprints. For the most recent list, see
-        <a href="https://scholar.google.com/citations?user=gq_dEPoAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>.
+        Selected papers and preprints. For the complete publication list,
+        visit my
+        <a href="https://scholar.google.com/citations?user=gq_dEPoAAAAJ&hl=en"
+           target="_blank" rel="noopener">Google Scholar</a>.
       </p>
 
-      <h3 class="pub-category">Conferences & Shared Tasks</h3>
-
+      <h3 class="pub-category">Longitudinal &amp; Mental Health NLP</h3>
       <div class="publication-list">
 
         <article class="publication-item">
           <h4>Overview of the CLPsych 2026 Shared Task: Capturing and Characterizing Mental Health Changes through Social Media Timeline Dynamics</h4>
           <p><strong>Iqra Ali</strong>, T. Tseriotou, G. Dvir, C. Chan, Y. Zhou, J. A. Lossio-Ventura, A. Klein, et al.</p>
           <p class="venue">CLPsych 2026.</p>
+          <p class="pub-links">
+            <a href="https://aclanthology.org/2026.clpsych-1.32/" target="_blank" rel="noopener">[ACL Anthology]</a>
+          </p>
         </article>
 
         <article class="publication-item">
-          <h4>VLURes: Benchmarking Long-Text Grounding and Cross-Lingual Robustness in Vision-Language Models</h4>
-          <p>J. Atuhurra, <strong>Iqra Ali</strong>, T. Iwakura, H. Kamigaito, T. Hiraoka.</p>
-          <p class="venue">Findings of ACL 2026.</p>
-          <p><a href="https://arxiv.org/abs/2406.15359" target="_blank" rel="noopener">[PDF]</a></p>
-        </article>
-
-        <article class="publication-item">
-          <h4>OasisSimp: An Open-Source Asian-English Sentence Simplification Dataset</h4>
-          <p>H. Liu, M. Tian, <strong>Iqra Ali</strong>, H. Gao, Q. Wu, B. Yang, U. Thayasivam, E. S. A. Lee, et al.</p>
-          <p class="venue">LREC 2026.</p>
+          <h4>LiFT: Does Instruction Fine-Tuning Improve In-Context Learning for Longitudinal Modelling by Large Language Models?</h4>
+          <p><strong>Iqra Ali</strong>, T. Tseriotou, M. E. Akhter, Y. Zhou, M. Liakata.</p>
+          <p class="venue">arXiv:2604.16382, 2026.</p>
+          <p class="pub-links">
+            <a href="https://arxiv.org/abs/2604.16382" target="_blank" rel="noopener">[Paper]</a>
+          </p>
         </article>
 
         <article class="publication-item">
           <h4>Multistream Modelling for Mental Health: Modelling Linguistic and Temporal Contexts with Mutual and Self-Excitation in Social Media</h4>
           <p>A. Hills, T. Tseriotou, M. E. Akhter, J. Mao, <strong>Iqra Ali</strong>, X. Miscouridou, M. Liakata.</p>
           <p class="venue">CLPsych 2026.</p>
-        </article>
-
-        <article class="publication-item">
-          <h4>HLU: Human vs. LLM-Generated Text Detection Dataset for Urdu at Multiple Granularities</h4>
-          <p><strong>Iqra Ali</strong>, J. Atuhurra, H. Kamigaito, T. Watanabe.</p>
-          <p class="venue">COLING 2025.</p>
+          <p class="pub-links">
+            <a href="https://aclanthology.org/2026.clpsych-1.5/" target="_blank" rel="noopener">[ACL Anthology]</a>
+          </p>
         </article>
 
         <article class="publication-item">
           <h4>Overview of the CLPsych 2025 Shared Task: Capturing Mental Health Dynamics from Social Media Timelines</h4>
           <p>T. Tseriotou, J. Chim, A. Klein, A. Shamir, G. Dvir, <strong>Iqra Ali</strong>, C. Kennedy, G. S. Kohli, et al.</p>
           <p class="venue">CLPsych 2025.</p>
-          <p><a href="https://aclanthology.org/2025.clpsych-1.16/" target="_blank" rel="noopener">[ACL Anthology]</a></p>
+          <p class="pub-links">
+            <a href="https://aclanthology.org/2025.clpsych-1.16/" target="_blank" rel="noopener">[ACL Anthology]</a>
+          </p>
+        </article>
+      </div>
+
+      <h3 class="pub-category">Multilingual, Low-Resource &amp; Multimodal NLP</h3>
+      <div class="publication-list">
+
+        <article class="publication-item">
+          <h4>VLURes: Benchmarking Long-Text Grounding and Cross-Lingual Robustness in Vision-Language Models</h4>
+          <p>J. Atuhurra, <strong>Iqra Ali</strong>, T. Iwakura, H. Kamigaito, T. Hiraoka.</p>
+          <p class="venue">Findings of ACL 2026.</p>
+          <p class="pub-links">
+            <a href="https://aclanthology.org/2026.findings-acl.1367/" target="_blank" rel="noopener">[ACL Anthology]</a>
+            <a href="https://arxiv.org/abs/2406.15359" target="_blank" rel="noopener">[arXiv]</a>
+          </p>
         </article>
 
         <article class="publication-item">
-          <h4>Monolingual Paraphrase Detection for Low-Resource Pashto Language at Sentence Level</h4>
-          <p><strong>Iqra Ali</strong>, et al.</p>
-          <p class="venue">LREC-COLING 2024.</p>
-          <p><a href="https://aclanthology.org/2024.lrec-main.1011/" target="_blank" rel="noopener">[ACL Anthology]</a></p>
+          <h4>OasisSimp: An Open-Source Asian-English Sentence Simplification Dataset</h4>
+          <p>H. Liu, M. Tian, <strong>Iqra Ali</strong>, H. Gao, Q. Wu, B. Yang, U. Thayasivam, E. S. A. Lee, et al.</p>
+          <p class="venue">LREC 2026.</p>
+          <p class="pub-links">
+            <a href="https://aclanthology.org/2026.lrec-1.483/" target="_blank" rel="noopener">[ACL Anthology]</a>
+          </p>
         </article>
 
+        <article class="publication-item">
+          <h4>HLU: Human vs. LLM-Generated Text Detection Dataset for Urdu at Multiple Granularities</h4>
+          <p><strong>Iqra Ali</strong>, J. Atuhurra, H. Kamigaito, T. Watanabe.</p>
+          <p class="venue">COLING 2025.</p>
+          <p class="pub-links">
+            <a href="https://aclanthology.org/2025.coling-main.235/" target="_blank" rel="noopener">[ACL Anthology]</a>
+          </p>
+        </article>
+
+        <article class="publication-item">
+          <h4>Monolingual Paraphrase Detection Corpus for Low Resource Pashto Language at Sentence Level</h4>
+          <p><strong>Iqra Ali</strong>, H. Kamigaito, T. Watanabe.</p>
+          <p class="venue">LREC-COLING 2024.</p>
+          <p class="pub-links">
+            <a href="https://aclanthology.org/2024.lrec-main.1011/" target="_blank" rel="noopener">[ACL Anthology]</a>
+            <a href="https://arxiv.org/abs/2404.08666" target="_blank" rel="noopener">[arXiv]</a>
+          </p>
+        </article>
       </div>
-
-      <h3 class="pub-category">Preprints</h3>
-
-      <article class="publication-item">
-        <h4>LiFT: Does Instruction Fine-Tuning Improve In-Context Learning for Longitudinal Modelling by Large Language Models?</h4>
-        <p><strong>Iqra Ali</strong>, T. Tseriotou, M. E. Akhter, Y. Zhou, M. Liakata.</p>
-        <p class="venue">arXiv:2604.16382, 2026.</p>
-        <p><a href="https://arxiv.org/abs/2604.16382" target="_blank" rel="noopener">[PDF]</a></p>
-      </article>
-
     </div>
   </section>
 
+  <!-- PROJECTS -->
   <section id="projects" class="section soft">
     <div class="section-container narrow">
       <h2 class="section-title">Projects</h2>
-      <p class="section-intro">Selected research projects, datasets, and benchmark-development work.</p>
+      <p class="section-intro">Selected research projects, datasets and benchmark-development work.</p>
 
       <div class="project-list">
-
         <article class="project-item">
           <h3>LiFT — Longitudinal Instruction Fine-Tuning</h3>
           <p>
-            LiFT investigates whether instruction fine-tuning can improve the ability of large language models to perform
-            in-context learning for longitudinal modelling. The work studies model behaviour across several longitudinal
-            datasets and examines how fine-tuning, temporal context, and prompting interact when models must reason about
-            change over time.
+            LiFT investigates whether instruction fine-tuning can improve
+            the ability of large language models to perform in-context
+            learning for longitudinal modelling.
+          </p>
+          <p>
+            The work studies model behaviour across several longitudinal
+            datasets, exploring how fine-tuning, temporal context and
+            prompting interact when models must reason about changes over time.
           </p>
           <div class="project-links">
             <a href="https://arxiv.org/abs/2604.16382" target="_blank" rel="noopener">[Paper]</a>
@@ -332,26 +481,40 @@
         <article class="project-item">
           <h3>CLPsych 2026 Shared Task</h3>
           <p>
-            A shared-task initiative focused on capturing and characterizing mental-health changes through social-media
-            timeline dynamics. My role includes coordinating task design, annotation frameworks, dataset development,
-            evaluation protocols, baseline systems, and shared-task documentation with an international research team.
+            Led an international shared-task initiative on capturing
+            and characterizing mental-health changes through social-media
+            timeline dynamics.
           </p>
+          <p>
+            Responsibilities included coordinating task design,
+            annotation frameworks, dataset development, evaluation protocols,
+            baseline systems and shared-task documentation.
+          </p>
+          <div class="project-links">
+            <a href="https://aclanthology.org/2026.clpsych-1.32/" target="_blank" rel="noopener">[Overview Paper]</a>
+          </div>
         </article>
 
         <article class="project-item">
-          <h3>HLU — Human vs. LLM-Generated Urdu</h3>
+          <h3>HLU — Human vs. LLM-Generated Urdu Text</h3>
           <p>
-            HLU is a benchmark for detecting human- and LLM-generated Urdu text. It contains 1,014 instances spanning
-            13 domains and multiple linguistic granularities, with human evaluation and multilingual model benchmarking.
+            Developed a benchmark for detecting human- and LLM-generated
+            Urdu text, containing 1,014 instances across 13 domains and
+            multiple linguistic granularities, with human evaluation and
+            multilingual model benchmarking.
           </p>
+          <div class="project-links">
+            <a href="https://aclanthology.org/2025.coling-main.235/" target="_blank" rel="noopener">[Paper]</a>
+          </div>
         </article>
 
         <article class="project-item">
           <h3>Low-Resource Pashto Paraphrase Detection</h3>
           <p>
-            The first manually annotated Pashto paraphrase-detection corpus developed in this work contains 5,793
-            sentence pairs across ten domains. XLM-RoBERTa fine-tuning achieved an F1 score of 96%, establishing a
-            strong benchmark for sentence-level paraphrase detection in Pashto.
+            Developed a manually annotated Pashto paraphrase-detection corpus
+            containing 5,793 sentence pairs across ten domains.
+            Fine-tuned XLM-RoBERTa models achieved 96% F1 for
+            sentence-level paraphrase detection.
           </p>
           <div class="project-links">
             <a href="https://aclanthology.org/2024.lrec-main.1011/" target="_blank" rel="noopener">[Paper]</a>
@@ -359,83 +522,309 @@
         </article>
 
         <article class="project-item">
-          <h3>VLURes — Multilingual Vision-Language Benchmarking</h3>
+          <h3>VLURes — Vision-Language Benchmarking</h3>
           <p>
-            VLURes evaluates grounding and cross-lingual robustness in vision-language models across multiple languages
-            and tasks, with particular emphasis on multilingual and low-resource settings.
+            VLURes evaluates long-text grounding and cross-lingual
+            robustness in vision-language models through six tasks
+            spanning four languages, including multilingual and
+            low-resource settings.
           </p>
           <div class="project-links">
-            <a href="https://arxiv.org/abs/2406.15359" target="_blank" rel="noopener">[Paper]</a>
+            <a href="https://aclanthology.org/2026.findings-acl.1367/" target="_blank" rel="noopener">[Paper]</a>
           </div>
         </article>
-
       </div>
     </div>
   </section>
 
-  <section id="service" class="section white">
+  <!-- AWARDS -->
+  <section id="awards" class="section white">
     <div class="section-container narrow">
-      <h2 class="section-title">Academic Service</h2>
+      <h2 class="section-title">Awards &amp; Honours</h2>
+
+      <div class="detail-grid">
+        <article class="detail-card">
+          <h3>UKRI Fully Funded PhD Studentship</h3>
+          <p>Queen Mary University of London</p>
+          <p class="timeline-meta">2025 – Present</p>
+        </article>
+
+        <article class="detail-card">
+          <h3>Isambard-AI Research Compute Allocation</h3>
+          <p>Awarded research computing resources on the Isambard-AI supercomputing infrastructure.</p>
+        </article>
+
+        <article class="detail-card">
+          <h3>Google Conference Travel Grant</h3>
+          <p>Google</p>
+          <p class="timeline-meta">2024</p>
+        </article>
+
+        <article class="detail-card">
+          <h3>Japanese Government MEXT Scholarship</h3>
+          <p>Fully funded Master's scholarship at NAIST, Japan.</p>
+          <p class="timeline-meta">2022 – 2024</p>
+        </article>
+
+        <article class="detail-card">
+          <h3>HEC Undergraduate Scholarship</h3>
+          <p>Fully funded undergraduate scholarship, Pakistan.</p>
+          <p class="timeline-meta">2017 – 2021</p>
+        </article>
+
+        <article class="detail-card">
+          <h3>Punjab Group of Colleges Scholarship</h3>
+          <p>Fully funded scholarship, Pakistan.</p>
+          <p class="timeline-meta">2015 – 2017</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACADEMIC SERVICE -->
+  <section id="service" class="section soft">
+    <div class="section-container narrow">
+      <h2 class="section-title">Academic Service &amp; Affiliations</h2>
 
       <div class="service-grid">
         <article>
-          <h3>Lead Organizer</h3>
-          <p>CLPsych 2026 Shared Task on Capturing and Characterizing Mental Health Changes through Social Media Timeline Dynamics.</p>
+          <h3>Lead Organiser — CLPsych 2026</h3>
+          <p>
+            Shared Task on Capturing and Characterizing Mental Health
+            Changes through Social Media Timeline Dynamics.
+          </p>
         </article>
 
         <article>
-          <h3>Lead Organizer</h3>
+          <h3>Lead Organiser — DS4MH Interest Group</h3>
+          <p class="timeline-meta">2025 – Present</p>
           <p>
-            <a href="https://turing-ds4mh.github.io/" target="_blank" rel="noopener">Data Science for Mental Health (DS4MH) Interest Group</a>.
+            Leading interdisciplinary research activities and knowledge
+            exchange in data science, AI, NLP and mental health.
           </p>
+          <p>
+            Organising research seminars, technical discussions,
+            networking events and cross-institutional collaborations.
+          </p>
+          <a href="https://turing-ds4mh.github.io/" target="_blank" rel="noopener">[DS4MH Website]</a>
         </article>
 
         <article>
           <h3>Reviewer</h3>
-          <p>ACL Rolling Review.</p>
+          <p>ACL Rolling Review (ARR).</p>
         </article>
 
         <article>
-          <h3>Shared Task Contributor</h3>
-          <p>CLPsych 2025 Shared Task on Capturing Mental Health Dynamics from Social Media Timelines.</p>
+          <h3>Shared Task Contributor — CLPsych 2025</h3>
+          <p>
+            Contributed to task design, dataset analysis, evaluation,
+            baseline development and shared-task research.
+          </p>
+        </article>
+
+        <article>
+          <h3>Teaching Assistant — QMUL</h3>
+          <p>
+            Supporting undergraduate and Master's teaching through
+            laboratory sessions, student guidance and coursework assessment.
+          </p>
         </article>
       </div>
     </div>
   </section>
 
-  <section id="presentations" class="section soft">
+  <!-- PRESENTATIONS -->
+  <section id="presentations" class="section white">
     <div class="section-container narrow">
       <h2 class="section-title">Selected Presentations</h2>
 
       <div class="talk-item">
-        <span class="talk-type">Invited Talk · 2025</span>
-        <h3>The Evolution of Healthcare in the Era of Artificial Intelligence</h3>
-        <p>University of Cambridge</p>
+        <span class="talk-type">Research Symposium · 24 November 2026</span>
+        <h3>UK AI Research Symposium 2026</h3>
+        <p>Poster session.</p>
+        <a href="https://www.ukairs.ac.uk/i/PosterSessions" target="_blank" rel="noopener">[Event Website]</a>
       </div>
 
       <div class="talk-item">
         <span class="talk-type">Invited Talk · 2025</span>
+        <h3>The Evolution of Healthcare in the Era of Artificial Intelligence</h3>
+        <p>University of Cambridge.</p>
+      </div>
+
+      <div class="talk-item">
+        <span class="talk-type">Research Talk · 25 November 2025</span>
         <h3>Challenges of Multimodal Longitudinal Datasets</h3>
-        <p>DEMON Research Group</p>
+        <p>DEMON Research Group.</p>
+      </div>
+
+      <div class="talk-item">
+        <span class="talk-type">Workshop · 13 November 2025</span>
+        <h3>The Future of Multi-modal Healthcare AI</h3>
+        <p>AdSoLve Workshop.</p>
+        <a href="https://adsolve.github.io/2026-01-21-the-future-of-multi-modal-healthcare-ai-workshop.html" target="_blank" rel="noopener">[Workshop]</a>
+      </div>
+
+      <div class="talk-item">
+        <span class="talk-type">Stakeholder Workshop · 24 June 2026</span>
+        <h3>Evaluating AI for Mental Health Support</h3>
+        <p>AdSoLve Stakeholder Workshop.</p>
+        <a href="https://adsolve.github.io/2026-06-24-evaluating-ai-for-mental-health-support-workshop.html" target="_blank" rel="noopener">[Workshop]</a>
       </div>
 
       <div class="talk-item">
         <span class="talk-type">Tutorial · 2024</span>
         <h3>How to Curate Data for Low-Resource Languages</h3>
-        <p>Nara Institute of Science and Technology · NLP Special Interest Group on Low-Resource Languages</p>
+        <p>Nara Institute of Science and Technology · NLP Special Interest Group on Low-Resource Languages.</p>
       </div>
     </div>
   </section>
 
+  <!-- WORKSHOPS -->
+  <section id="workshops" class="section soft">
+    <div class="section-container narrow">
+      <h2 class="section-title">Attended Talks &amp; Workshops</h2>
+
+      <div class="detail-grid">
+        <article class="detail-card">
+          <h3>Emerging Questions in AI Welfare</h3>
+          <p>Winnie Street and Geoff Keeling, Google Research.</p>
+        </article>
+
+        <article class="detail-card">
+          <h3>Trustworthy Multimodal Medical Diagnostics: From Innovation to Adoption</h3>
+          <p>AdSoLve Workshop · 21 October 2026.</p>
+        </article>
+
+        <article class="detail-card">
+          <h3>Evaluating AI for Legal Reasoning and Support</h3>
+          <p>AdSoLve Stakeholder Workshop · 6 May 2026.</p>
+          <a href="https://adsolve.github.io/2026-05-06-legal-ai-workshop-summary.html" target="_blank" rel="noopener">[Workshop]</a>
+        </article>
+
+        <article class="detail-card">
+          <h3>Evaluating AI for Legal Reasoning and Support</h3>
+          <p>AdSoLve Workshop · 3 July 2025.</p>
+          <a href="https://adsolve.github.io/2025-07-03-evaluating-ai-for-legal-reasoning-and-support-workshop.html" target="_blank" rel="noopener">[Workshop]</a>
+        </article>
+
+        <article class="detail-card">
+          <h3>Turing AI Fellowship Showcase</h3>
+          <p>AdSoLve Co-Creation Workshop · 6 March 2025.</p>
+          <a href="https://adsolve.github.io/2025-03-06-turing-ai-fellowship-mental-health-use-case.html" target="_blank" rel="noopener">[Workshop]</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECHNICAL SKILLS -->
+  <section id="skills" class="section white">
+    <div class="section-container narrow">
+      <h2 class="section-title">Technical Skills</h2>
+
+      <div class="detail-grid">
+        <article class="detail-card">
+          <h3>Programming Languages</h3>
+          <p>Python, SQL, Bash.</p>
+        </article>
+
+        <article class="detail-card">
+          <h3>Machine Learning &amp; NLP</h3>
+          <p>
+            PyTorch, TensorFlow, Scikit-learn, Hugging Face Transformers,
+            PEFT, Pandas, NumPy, spaCy, NLTK.
+          </p>
+        </article>
+
+        <article class="detail-card">
+          <h3>LLM Training &amp; Evaluation</h3>
+          <p>
+            Instruction fine-tuning, in-context learning, LoRA,
+            parameter-efficient fine-tuning, prompt engineering,
+            model evaluation and benchmark design.
+          </p>
+        </article>
+
+        <article class="detail-card">
+          <h3>Research Expertise</h3>
+          <p>
+            Longitudinal modelling, computational mental health,
+            multimodal learning, multilingual NLP, low-resource NLP,
+            generated-text detection and dataset development.
+          </p>
+        </article>
+
+        <article class="detail-card">
+          <h3>Platforms &amp; Tools</h3>
+          <p>
+            Git, Linux, LaTeX, Docker, Kubernetes, SLURM,
+            Weights &amp; Biases.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- LANGUAGES -->
+  <section id="languages" class="section soft">
+    <div class="section-container narrow">
+      <h2 class="section-title">Languages</h2>
+
+      <div class="detail-grid">
+        <article class="detail-card">
+          <h3>English</h3>
+          <p>Fluent professional proficiency</p>
+          <p>IELTS 8.0 · TOEIC 895</p>
+        </article>
+
+        <article class="detail-card">
+          <h3>Urdu &amp; Pashto</h3>
+          <p>Native proficiency</p>
+        </article>
+
+        <article class="detail-card">
+          <h3>Hindi</h3>
+          <p>Fluent</p>
+        </article>
+
+        <article class="detail-card">
+          <h3>Bangla</h3>
+          <p>Basic proficiency</p>
+        </article>
+
+        <article class="detail-card">
+          <h3>Japanese</h3>
+          <p>Basic proficiency</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
   <section id="contact" class="section contact-section">
     <div class="section-container narrow">
       <h2 class="section-title">Contact</h2>
 
       <div class="contact-box">
-        <p><strong>Queen Mary University email:</strong> <a href="mailto:iqra.ali@qmul.ac.uk">iqra.ali@qmul.ac.uk</a></p>
-        <p><strong>Personal email:</strong> <a href="mailto:iqra888ali@gmail.com">iqra888ali@gmail.com</a></p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/iqra-ali1122/" target="_blank" rel="noopener">linkedin.com/in/iqra-ali1122</a></p>
-        <p><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=gq_dEPoAAAAJ&hl=en" target="_blank" rel="noopener">Scholar profile</a></p>
+        <p>
+          <strong>Queen Mary University email:</strong>
+          <a href="mailto:iqra.ali@qmul.ac.uk">iqra.ali@qmul.ac.uk</a>
+        </p>
+        <p>
+          <strong>Personal email:</strong>
+          <a href="mailto:iqra888ali@gmail.com">iqra888ali@gmail.com</a>
+        </p>
+        <p>
+          <strong>LinkedIn:</strong>
+          <a href="https://www.linkedin.com/in/iqra-ali1122/" target="_blank" rel="noopener">
+            linkedin.com/in/iqra-ali1122
+          </a>
+        </p>
+        <p>
+          <strong>Google Scholar:</strong>
+          <a href="https://scholar.google.com/citations?user=gq_dEPoAAAAJ&hl=en" target="_blank" rel="noopener">
+            Scholar Profile
+          </a>
+        </p>
       </div>
     </div>
   </section>
